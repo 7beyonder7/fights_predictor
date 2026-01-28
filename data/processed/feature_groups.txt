@@ -1,0 +1,132 @@
+
+=== PHYSICAL ===
+  height_diff
+  reach_diff
+  age_diff
+  ape_index_diff
+  f_1_in_prime
+  f_2_in_prime
+  prime_advantage
+  f_1_age_risk
+  f_2_age_risk
+
+=== CAREER ===
+  f_1_win_rate
+  f_2_win_rate
+  win_rate_diff
+  f_1_loss_rate
+  f_2_loss_rate
+  loss_rate_diff
+  exp_diff
+  f_1_exp_level
+  f_2_exp_level
+  f_1_record_score
+  f_2_record_score
+  record_score_diff
+
+=== STRIKING ===
+  f_1_slpm
+  f_2_slpm
+  slpm_diff
+  f_1_str_acc
+  f_2_str_acc
+  str_acc_diff
+  f_1_sapm
+  f_2_sapm
+  sapm_diff
+  f_1_str_def
+  f_2_str_def
+  str_def_diff
+  f_1_str_differential
+  f_2_str_differential
+  str_differential_diff
+
+=== GRAPPLING ===
+  f_1_td_avg
+  f_2_td_avg
+  td_avg_diff
+  f_1_td_acc
+  f_2_td_acc
+  td_acc_diff
+  f_1_td_def
+  f_2_td_def
+  td_def_diff
+  f_1_sub_avg
+  f_2_sub_avg
+  sub_avg_diff
+
+=== STYLE ===
+  f_1_striker_score
+  f_2_striker_score
+  f_1_grappler_score
+  f_2_grappler_score
+  f_1_style_ratio
+  f_2_style_ratio
+  f_1_effectiveness
+  f_2_effectiveness
+  effectiveness_diff
+
+=== FINISH ===
+  f_1_ko_power
+  f_2_ko_power
+  ko_power_diff
+  f_1_sub_threat
+  f_2_sub_threat
+  sub_threat_diff
+  f_1_durability
+  f_2_durability
+  durability_diff
+  f_1_finish_potential
+  f_2_finish_potential
+  finish_potential_diff
+
+=== EXPERIENCE ===
+  f_1_ufc_fights
+  f_2_ufc_fights
+  ufc_exp_diff
+  f_1_is_debut
+  f_2_is_debut
+  debut_matchup
+  f_1_is_veteran
+  f_2_is_veteran
+  veteran_vs_rookie
+
+=== MOMENTUM ===
+  f_1_streak
+  f_2_streak
+  streak_diff
+  f_1_on_win_streak
+  f_2_on_win_streak
+  f_1_on_lose_streak
+  f_2_on_lose_streak
+  f_1_days_since_fight
+  f_2_days_since_fight
+  activity_diff
+  f_1_ring_rust
+  f_2_ring_rust
+
+=== MATCHUP ===
+  stance_clash
+  style_clash
+  f_1_grappler_vs_f_2_striker
+  f_1_striker_vs_f_2_grappler
+  td_battle
+  striking_battle
+  matchup_score
+
+=== BETTING ===
+  f_1_odds
+  f_2_odds
+  odds_diff
+  f_1_is_favorite
+  f_1_implied_prob_norm
+  f_2_implied_prob_norm
+  odds_value_diff
+  f_1_heavy_favorite
+  f_1_heavy_underdog
+
+=== CATEGORICAL ===
+  f_1_stance_encoded
+  f_2_stance_encoded
+  weight_class_encoded
+  title_fight

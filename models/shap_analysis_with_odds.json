@@ -1,0 +1,1378 @@
+{
+  "direction_analysis": [
+    {
+      "feature": "f_2_odds",
+      "mean_shap": 0.03341783210635185,
+      "mean_abs_shap": 0.30120259523391724,
+      "positive_pct": 61.8,
+      "correlation": 0.5869843154957233,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_1_odds",
+      "mean_shap": 0.04038586467504501,
+      "mean_abs_shap": 0.2746118903160095,
+      "positive_pct": 62.3,
+      "correlation": -0.7019857757875496,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "exp_diff",
+      "mean_shap": 0.02128736488521099,
+      "mean_abs_shap": 0.23057417571544647,
+      "positive_pct": 58.099999999999994,
+      "correlation": 0.8464140660384561,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "win_rate_diff",
+      "mean_shap": 0.018069813027977943,
+      "mean_abs_shap": 0.15139561891555786,
+      "positive_pct": 38.0,
+      "correlation": 0.8425655306931616,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "record_score_diff",
+      "mean_shap": 0.010239648632705212,
+      "mean_abs_shap": 0.14961670339107513,
+      "positive_pct": 49.5,
+      "correlation": 0.8665851909467608,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "loss_rate_diff",
+      "mean_shap": 0.006343260873109102,
+      "mean_abs_shap": 0.1258479654788971,
+      "positive_pct": 54.6,
+      "correlation": 0.8735459969435799,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_2_ko_power",
+      "mean_shap": -0.0012989717070013285,
+      "mean_abs_shap": 0.10266540199518204,
+      "positive_pct": 38.4,
+      "correlation": -0.76279240152482,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "f_2_striker_score",
+      "mean_shap": -0.0059598940424621105,
+      "mean_abs_shap": 0.09216051548719406,
+      "positive_pct": 17.599999999999998,
+      "correlation": -0.6206033949726503,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "f_2_td_acc",
+      "mean_shap": 0.006750559899955988,
+      "mean_abs_shap": 0.08200616389513016,
+      "positive_pct": 36.199999999999996,
+      "correlation": 0.12772145807302784,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_1_exp_level",
+      "mean_shap": 0.00410853186622262,
+      "mean_abs_shap": 0.08078069984912872,
+      "positive_pct": 83.7,
+      "correlation": 0.8698958521674542,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "odds_diff",
+      "mean_shap": 0.03287023678421974,
+      "mean_abs_shap": 0.07421368360519409,
+      "positive_pct": 56.699999999999996,
+      "correlation": 0.042107635805045666,
+      "direction": "Mixed"
+    },
+    {
+      "feature": "str_differential_diff",
+      "mean_shap": 0.008719745092093945,
+      "mean_abs_shap": 0.07336803525686264,
+      "positive_pct": 66.60000000000001,
+      "correlation": 0.8380150010397402,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "age_diff",
+      "mean_shap": 0.010380632244050503,
+      "mean_abs_shap": 0.06666027754545212,
+      "positive_pct": 49.0,
+      "correlation": 0.9156433721062588,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_2_loss_rate",
+      "mean_shap": 0.007883314043283463,
+      "mean_abs_shap": 0.059395577758550644,
+      "positive_pct": 71.8,
+      "correlation": 0.7876097934174602,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_2_str_def",
+      "mean_shap": 0.010205022059381008,
+      "mean_abs_shap": 0.05933597683906555,
+      "positive_pct": 29.799999999999997,
+      "correlation": -0.7085657893854371,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "f_1_str_differential",
+      "mean_shap": -0.0005803261883556843,
+      "mean_abs_shap": 0.057798102498054504,
+      "positive_pct": 73.2,
+      "correlation": 0.7599036486436801,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "ape_index_diff",
+      "mean_shap": 0.012184965424239635,
+      "mean_abs_shap": 0.05704657360911369,
+      "positive_pct": 52.7,
+      "correlation": 0.3643125429742849,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_2_in_prime",
+      "mean_shap": 0.004676394630223513,
+      "mean_abs_shap": 0.05579691380262375,
+      "positive_pct": 54.7,
+      "correlation": -0.9363621049445793,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "f_1_implied_prob_norm",
+      "mean_shap": 0.01885903999209404,
+      "mean_abs_shap": 0.052489425987005234,
+      "positive_pct": 56.3,
+      "correlation": 0.05582075577617773,
+      "direction": "Mixed"
+    },
+    {
+      "feature": "striking_battle",
+      "mean_shap": 0.0052614058367908,
+      "mean_abs_shap": 0.051457829773426056,
+      "positive_pct": 61.6,
+      "correlation": 0.7811333169554436,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_2_slpm",
+      "mean_shap": -0.0014524395810440183,
+      "mean_abs_shap": 0.05016973242163658,
+      "positive_pct": 29.5,
+      "correlation": -0.7315580907673713,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "f_2_finish_potential",
+      "mean_shap": 0.007399068679660559,
+      "mean_abs_shap": 0.04757155478000641,
+      "positive_pct": 34.2,
+      "correlation": -0.2040036815670807,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "td_battle",
+      "mean_shap": 0.009556611999869347,
+      "mean_abs_shap": 0.0459657683968544,
+      "positive_pct": 39.6,
+      "correlation": 0.8146961062501344,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_2_td_def",
+      "mean_shap": 0.008318675681948662,
+      "mean_abs_shap": 0.044945769011974335,
+      "positive_pct": 39.900000000000006,
+      "correlation": -0.7711154985388405,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "f_2_str_differential",
+      "mean_shap": 0.004833301529288292,
+      "mean_abs_shap": 0.04240952059626579,
+      "positive_pct": 33.300000000000004,
+      "correlation": -0.738312948659161,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "td_def_diff",
+      "mean_shap": 0.010362168774008751,
+      "mean_abs_shap": 0.042163316160440445,
+      "positive_pct": 56.699999999999996,
+      "correlation": 0.8804951061643937,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "style_clash",
+      "mean_shap": 0.0056013669818639755,
+      "mean_abs_shap": 0.04101794585585594,
+      "positive_pct": 68.5,
+      "correlation": -0.7508720438258752,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "f_1_days_since_fight",
+      "mean_shap": -0.0006326212896965444,
+      "mean_abs_shap": 0.04024633765220642,
+      "positive_pct": 47.9,
+      "correlation": -0.7173779763920919,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "activity_diff",
+      "mean_shap": 0.0007242405554279685,
+      "mean_abs_shap": 0.03878294676542282,
+      "positive_pct": 66.3,
+      "correlation": 0.723948766061311,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_2_str_acc",
+      "mean_shap": 0.005519411992281675,
+      "mean_abs_shap": 0.03867916017770767,
+      "positive_pct": 38.1,
+      "correlation": 0.4068571718068694,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_2_win_rate",
+      "mean_shap": 0.0033391546458005905,
+      "mean_abs_shap": 0.03622561693191528,
+      "positive_pct": 35.099999999999994,
+      "correlation": -0.8098425251688843,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "str_acc_diff",
+      "mean_shap": 0.003983105067163706,
+      "mean_abs_shap": 0.03602089360356331,
+      "positive_pct": 33.300000000000004,
+      "correlation": 0.5344578676010266,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_1_sub_threat",
+      "mean_shap": 0.004293879494071007,
+      "mean_abs_shap": 0.03579729422926903,
+      "positive_pct": 71.89999999999999,
+      "correlation": 0.07582865909394171,
+      "direction": "Mixed"
+    },
+    {
+      "feature": "matchup_score",
+      "mean_shap": 0.002655675867572427,
+      "mean_abs_shap": 0.03516439348459244,
+      "positive_pct": 51.4,
+      "correlation": 0.6472316834394105,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_2_durability",
+      "mean_shap": 0.006575396284461021,
+      "mean_abs_shap": 0.03355709835886955,
+      "positive_pct": 48.4,
+      "correlation": 0.028702892966976243,
+      "direction": "Mixed"
+    },
+    {
+      "feature": "f_1_str_def",
+      "mean_shap": -0.001575794885866344,
+      "mean_abs_shap": 0.03319872170686722,
+      "positive_pct": 75.0,
+      "correlation": 0.22818526159621547,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_1_sapm",
+      "mean_shap": 0.006525527220219374,
+      "mean_abs_shap": 0.02943798154592514,
+      "positive_pct": 54.800000000000004,
+      "correlation": -0.6407538159290688,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "f_2_days_since_fight",
+      "mean_shap": 0.0015776362270116806,
+      "mean_abs_shap": 0.0286935493350029,
+      "positive_pct": 37.4,
+      "correlation": -0.2862924852274512,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "f_1_td_avg",
+      "mean_shap": 0.004262961447238922,
+      "mean_abs_shap": 0.028392383828759193,
+      "positive_pct": 50.4,
+      "correlation": -0.533774784300502,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "f_2_exp_level",
+      "mean_shap": 0.0007516020559705794,
+      "mean_abs_shap": 0.028048992156982422,
+      "positive_pct": 40.8,
+      "correlation": -0.29672162676959163,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "f_2_record_score",
+      "mean_shap": 0.005577603355050087,
+      "mean_abs_shap": 0.027743292972445488,
+      "positive_pct": 64.4,
+      "correlation": -0.8518599515205981,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "f_2_implied_prob_norm",
+      "mean_shap": 0.006194325629621744,
+      "mean_abs_shap": 0.027698960155248642,
+      "positive_pct": 60.8,
+      "correlation": -0.6718218880393928,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "f_1_ufc_fights",
+      "mean_shap": 0.006282586604356766,
+      "mean_abs_shap": 0.02769259735941887,
+      "positive_pct": 58.699999999999996,
+      "correlation": -0.8685649810827604,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "f_1_td_acc",
+      "mean_shap": 0.001792331924661994,
+      "mean_abs_shap": 0.02741960436105728,
+      "positive_pct": 71.3,
+      "correlation": 0.057058221606344585,
+      "direction": "Mixed"
+    },
+    {
+      "feature": "ko_power_diff",
+      "mean_shap": 0.0019850239623337984,
+      "mean_abs_shap": 0.027392737567424774,
+      "positive_pct": 55.400000000000006,
+      "correlation": 0.32655457506108015,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_2_effectiveness",
+      "mean_shap": 0.0002925134322140366,
+      "mean_abs_shap": 0.026834866032004356,
+      "positive_pct": 73.3,
+      "correlation": -0.6711105019123175,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "f_2_sapm",
+      "mean_shap": 0.005227923393249512,
+      "mean_abs_shap": 0.025778867304325104,
+      "positive_pct": 48.9,
+      "correlation": -0.14655350791561794,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "durability_diff",
+      "mean_shap": 0.0019333796808496118,
+      "mean_abs_shap": 0.025698471814393997,
+      "positive_pct": 55.800000000000004,
+      "correlation": 0.13579363264032815,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "sapm_diff",
+      "mean_shap": 0.004683800972998142,
+      "mean_abs_shap": 0.023974323645234108,
+      "positive_pct": 37.4,
+      "correlation": 0.773883713384027,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_1_finish_potential",
+      "mean_shap": 0.0005050665931776166,
+      "mean_abs_shap": 0.02241094596683979,
+      "positive_pct": 74.1,
+      "correlation": 0.0821551120995239,
+      "direction": "Mixed"
+    },
+    {
+      "feature": "f_1_durability",
+      "mean_shap": 0.004493837244808674,
+      "mean_abs_shap": 0.022076305001974106,
+      "positive_pct": 53.900000000000006,
+      "correlation": 0.7684413430840888,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "effectiveness_diff",
+      "mean_shap": -0.00028241294785402715,
+      "mean_abs_shap": 0.021791255101561546,
+      "positive_pct": 42.9,
+      "correlation": 0.5902475276670921,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "td_avg_diff",
+      "mean_shap": 0.004253949038684368,
+      "mean_abs_shap": 0.02099025435745716,
+      "positive_pct": 48.0,
+      "correlation": -0.3585876196960005,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "f_1_td_def",
+      "mean_shap": 0.00024643028154969215,
+      "mean_abs_shap": 0.020737256854772568,
+      "positive_pct": 67.2,
+      "correlation": 0.5919233498250747,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "td_acc_diff",
+      "mean_shap": 0.002861416433006525,
+      "mean_abs_shap": 0.02046537585556507,
+      "positive_pct": 49.3,
+      "correlation": -0.4435497040807901,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "finish_potential_diff",
+      "mean_shap": 0.0037701171822845936,
+      "mean_abs_shap": 0.019776111468672752,
+      "positive_pct": 36.199999999999996,
+      "correlation": 0.13124053443960437,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "str_def_diff",
+      "mean_shap": 0.0056519233621656895,
+      "mean_abs_shap": 0.019603168591856956,
+      "positive_pct": 49.7,
+      "correlation": 0.6710542099864317,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_1_win_rate",
+      "mean_shap": 0.004853812046349049,
+      "mean_abs_shap": 0.01950589381158352,
+      "positive_pct": 38.7,
+      "correlation": 0.594701054067158,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_2_td_avg",
+      "mean_shap": 0.0012828413164243102,
+      "mean_abs_shap": 0.018061134964227676,
+      "positive_pct": 50.3,
+      "correlation": -0.15079753423899586,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "f_2_style_ratio",
+      "mean_shap": 0.004786002915352583,
+      "mean_abs_shap": 0.01804386079311371,
+      "positive_pct": 52.5,
+      "correlation": 0.532059805448095,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_1_str_acc",
+      "mean_shap": 0.0012387869646772742,
+      "mean_abs_shap": 0.01803823933005333,
+      "positive_pct": 77.8,
+      "correlation": 0.5621330468535136,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "odds_value_diff",
+      "mean_shap": 0.004754677880555391,
+      "mean_abs_shap": 0.016791336238384247,
+      "positive_pct": 62.8,
+      "correlation": 0.7356011270400641,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_2_grappler_score",
+      "mean_shap": 0.001871617278084159,
+      "mean_abs_shap": 0.016204578801989555,
+      "positive_pct": 56.39999999999999,
+      "correlation": -0.1174655072862712,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "f_1_record_score",
+      "mean_shap": 0.0034939779434353113,
+      "mean_abs_shap": 0.016195880249142647,
+      "positive_pct": 31.6,
+      "correlation": 0.5268810905808038,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "weight_class_encoded",
+      "mean_shap": 0.0038715715054422617,
+      "mean_abs_shap": 0.015552033670246601,
+      "positive_pct": 60.699999999999996,
+      "correlation": -0.4412024552545784,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "sub_threat_diff",
+      "mean_shap": 0.002792375162243843,
+      "mean_abs_shap": 0.015431415289640427,
+      "positive_pct": 60.4,
+      "correlation": 0.10831075262167883,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_2_sub_avg",
+      "mean_shap": 0.002923338208347559,
+      "mean_abs_shap": 0.015363416634500027,
+      "positive_pct": 35.4,
+      "correlation": 0.7923191253895617,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_1_effectiveness",
+      "mean_shap": 0.0008997208788059652,
+      "mean_abs_shap": 0.014699331484735012,
+      "positive_pct": 71.6,
+      "correlation": 0.15893915898868766,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_1_striker_score",
+      "mean_shap": 0.003841654397547245,
+      "mean_abs_shap": 0.014574604108929634,
+      "positive_pct": 60.5,
+      "correlation": 0.5959426482577072,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "prime_advantage",
+      "mean_shap": 0.0011151375947520137,
+      "mean_abs_shap": 0.014400537125766277,
+      "positive_pct": 25.7,
+      "correlation": 0.8007864952569103,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_1_style_ratio",
+      "mean_shap": 0.002520886482670903,
+      "mean_abs_shap": 0.014282481744885445,
+      "positive_pct": 57.699999999999996,
+      "correlation": -0.3641548743970256,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "f_2_streak",
+      "mean_shap": 0.0008956200908869505,
+      "mean_abs_shap": 0.014090479351580143,
+      "positive_pct": 70.89999999999999,
+      "correlation": 0.6268154724602886,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_1_loss_rate",
+      "mean_shap": 0.0030220740009099245,
+      "mean_abs_shap": 0.013586956076323986,
+      "positive_pct": 41.199999999999996,
+      "correlation": -0.5399588627168517,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "ufc_exp_diff",
+      "mean_shap": 0.0026699358131736517,
+      "mean_abs_shap": 0.013340282253921032,
+      "positive_pct": 66.3,
+      "correlation": 0.16141243987675588,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_1_slpm",
+      "mean_shap": 0.0013179180677980185,
+      "mean_abs_shap": 0.012957559898495674,
+      "positive_pct": 53.300000000000004,
+      "correlation": 0.32574232218333055,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_1_ko_power",
+      "mean_shap": -0.0014459548983722925,
+      "mean_abs_shap": 0.01139107160270214,
+      "positive_pct": 49.3,
+      "correlation": -0.06442602725434775,
+      "direction": "Mixed"
+    },
+    {
+      "feature": "height_diff",
+      "mean_shap": 0.0017085022991523147,
+      "mean_abs_shap": 0.011365310288965702,
+      "positive_pct": 50.0,
+      "correlation": 0.3502794605140442,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "slpm_diff",
+      "mean_shap": 0.0023817510809749365,
+      "mean_abs_shap": 0.011038621887564659,
+      "positive_pct": 51.4,
+      "correlation": 0.27261341411418,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "streak_diff",
+      "mean_shap": 0.0007735345861874521,
+      "mean_abs_shap": 0.010820724070072174,
+      "positive_pct": 41.099999999999994,
+      "correlation": -0.5313990631986919,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "f_2_sub_threat",
+      "mean_shap": 0.00375951430760324,
+      "mean_abs_shap": 0.010754426941275597,
+      "positive_pct": 57.699999999999996,
+      "correlation": -0.08019944177719268,
+      "direction": "Mixed"
+    },
+    {
+      "feature": "f_2_age_risk",
+      "mean_shap": 0.0009242297383025289,
+      "mean_abs_shap": 0.010656132362782955,
+      "positive_pct": 8.0,
+      "correlation": 0.9554459287642283,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "sub_avg_diff",
+      "mean_shap": 0.003320541698485613,
+      "mean_abs_shap": 0.010393369942903519,
+      "positive_pct": 57.3,
+      "correlation": -0.16982276053113776,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "f_1_grappler_score",
+      "mean_shap": -0.0007461060304194689,
+      "mean_abs_shap": 0.010257926769554615,
+      "positive_pct": 49.8,
+      "correlation": -0.13607216262367647,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "f_1_streak",
+      "mean_shap": 0.0015679438365623355,
+      "mean_abs_shap": 0.009746557101607323,
+      "positive_pct": 68.0,
+      "correlation": -0.5480143239029552,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "reach_diff",
+      "mean_shap": 0.0011459131492301822,
+      "mean_abs_shap": 0.008484339341521263,
+      "positive_pct": 60.6,
+      "correlation": -0.010261611382686001,
+      "direction": "Mixed"
+    },
+    {
+      "feature": "f_2_ufc_fights",
+      "mean_shap": 0.0019025398651137948,
+      "mean_abs_shap": 0.008085782639682293,
+      "positive_pct": 58.099999999999994,
+      "correlation": -0.1217548825780364,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "f_1_sub_avg",
+      "mean_shap": 0.0011961989803239703,
+      "mean_abs_shap": 0.005336140748113394,
+      "positive_pct": 66.4,
+      "correlation": 0.07521655434885095,
+      "direction": "Mixed"
+    },
+    {
+      "feature": "f_1_age_risk",
+      "mean_shap": 0.0007921825745142996,
+      "mean_abs_shap": 0.005149047821760178,
+      "positive_pct": 89.5,
+      "correlation": -0.8348949642835536,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "stance_clash",
+      "mean_shap": 0.0006461628945544362,
+      "mean_abs_shap": 0.003961943555623293,
+      "positive_pct": 63.3,
+      "correlation": -0.8010446767436635,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "title_fight",
+      "mean_shap": 0.0005369544960558414,
+      "mean_abs_shap": 0.00334836239926517,
+      "positive_pct": 5.7,
+      "correlation": 0.9504307153046612,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_1_stance_encoded",
+      "mean_shap": 0.00022017148148734123,
+      "mean_abs_shap": 0.002944002626463771,
+      "positive_pct": 23.7,
+      "correlation": 0.7586423174873698,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_2_stance_encoded",
+      "mean_shap": 0.0003176291938871145,
+      "mean_abs_shap": 0.002056955825537443,
+      "positive_pct": 86.9,
+      "correlation": -0.7364282770517019,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "f_2_on_lose_streak",
+      "mean_shap": 7.252064096974209e-05,
+      "mean_abs_shap": 0.001931596896611154,
+      "positive_pct": 77.8,
+      "correlation": -0.7123695625001717,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "debut_matchup",
+      "mean_shap": -2.0470433810260147e-06,
+      "mean_abs_shap": 0.0019197349902242422,
+      "positive_pct": 82.19999999999999,
+      "correlation": -0.46151031498935696,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "f_1_in_prime",
+      "mean_shap": 0.00015022199659142643,
+      "mean_abs_shap": 0.0013383676996454597,
+      "positive_pct": 47.5,
+      "correlation": 0.44840952311400595,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_1_ring_rust",
+      "mean_shap": -0.00025092970463447273,
+      "mean_abs_shap": 0.0011279945028945804,
+      "positive_pct": 89.8,
+      "correlation": -0.7336897546106135,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "f_2_is_debut",
+      "mean_shap": -1.2573674439408933e-06,
+      "mean_abs_shap": 0.0009349577594548464,
+      "positive_pct": 79.3,
+      "correlation": -0.7344736180275087,
+      "direction": "F2 \u2191"
+    },
+    {
+      "feature": "f_1_striker_vs_f_2_grappler",
+      "mean_shap": -4.252541111782193e-05,
+      "mean_abs_shap": 0.0007456747116521001,
+      "positive_pct": 19.5,
+      "correlation": 0.6055561574389373,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "veteran_vs_rookie",
+      "mean_shap": -0.00014725196524523199,
+      "mean_abs_shap": 0.0006219414644874632,
+      "positive_pct": 18.4,
+      "correlation": 0.49106947383894134,
+      "direction": "F1 \u2191"
+    },
+    {
+      "feature": "f_2_is_veteran",
+      "mean_shap": 0.0,
+      "mean_abs_shap": 0.0,
+      "positive_pct": 0.0,
+      "correlation": 0.0,
+      "direction": "Mixed"
+    },
+    {
+      "feature": "f_1_is_debut",
+      "mean_shap": 0.0,
+      "mean_abs_shap": 0.0,
+      "positive_pct": 0.0,
+      "correlation": 0.0,
+      "direction": "Mixed"
+    },
+    {
+      "feature": "f_1_is_veteran",
+      "mean_shap": 0.0,
+      "mean_abs_shap": 0.0,
+      "positive_pct": 0.0,
+      "correlation": 0.0,
+      "direction": "Mixed"
+    },
+    {
+      "feature": "f_1_grappler_vs_f_2_striker",
+      "mean_shap": 0.0,
+      "mean_abs_shap": 0.0,
+      "positive_pct": 0.0,
+      "correlation": 0.0,
+      "direction": "Mixed"
+    },
+    {
+      "feature": "f_2_ring_rust",
+      "mean_shap": 0.0,
+      "mean_abs_shap": 0.0,
+      "positive_pct": 0.0,
+      "correlation": 0.0,
+      "direction": "Mixed"
+    },
+    {
+      "feature": "f_1_on_lose_streak",
+      "mean_shap": 0.0,
+      "mean_abs_shap": 0.0,
+      "positive_pct": 0.0,
+      "correlation": 0.0,
+      "direction": "Mixed"
+    },
+    {
+      "feature": "f_2_on_win_streak",
+      "mean_shap": 0.0,
+      "mean_abs_shap": 0.0,
+      "positive_pct": 0.0,
+      "correlation": 0.0,
+      "direction": "Mixed"
+    },
+    {
+      "feature": "f_1_on_win_streak",
+      "mean_shap": 0.0,
+      "mean_abs_shap": 0.0,
+      "positive_pct": 0.0,
+      "correlation": 0.0,
+      "direction": "Mixed"
+    },
+    {
+      "feature": "f_1_is_favorite",
+      "mean_shap": 0.0,
+      "mean_abs_shap": 0.0,
+      "positive_pct": 0.0,
+      "correlation": 0.0,
+      "direction": "Mixed"
+    },
+    {
+      "feature": "f_1_heavy_favorite",
+      "mean_shap": 0.0,
+      "mean_abs_shap": 0.0,
+      "positive_pct": 0.0,
+      "correlation": 0.0,
+      "direction": "Mixed"
+    },
+    {
+      "feature": "f_1_heavy_underdog",
+      "mean_shap": 0.0,
+      "mean_abs_shap": 0.0,
+      "positive_pct": 0.0,
+      "correlation": 0.0,
+      "direction": "Mixed"
+    }
+  ],
+  "importance": [
+    {
+      "feature": "f_2_odds",
+      "importance": 0.3012027442455292
+    },
+    {
+      "feature": "f_1_odds",
+      "importance": 0.27461209893226624
+    },
+    {
+      "feature": "exp_diff",
+      "importance": 0.23057407140731812
+    },
+    {
+      "feature": "win_rate_diff",
+      "importance": 0.1513955295085907
+    },
+    {
+      "feature": "record_score_diff",
+      "importance": 0.1496167629957199
+    },
+    {
+      "feature": "loss_rate_diff",
+      "importance": 0.12584802508354187
+    },
+    {
+      "feature": "f_2_ko_power",
+      "importance": 0.10266543179750443
+    },
+    {
+      "feature": "f_2_striker_score",
+      "importance": 0.09216061979532242
+    },
+    {
+      "feature": "f_2_td_acc",
+      "importance": 0.08200614154338837
+    },
+    {
+      "feature": "f_1_exp_level",
+      "importance": 0.08078073710203171
+    },
+    {
+      "feature": "odds_diff",
+      "importance": 0.0742136612534523
+    },
+    {
+      "feature": "str_differential_diff",
+      "importance": 0.07336805015802383
+    },
+    {
+      "feature": "age_diff",
+      "importance": 0.06666023284196854
+    },
+    {
+      "feature": "f_2_loss_rate",
+      "importance": 0.059395622462034225
+    },
+    {
+      "feature": "f_2_str_def",
+      "importance": 0.059335995465517044
+    },
+    {
+      "feature": "f_1_str_differential",
+      "importance": 0.0577981136739254
+    },
+    {
+      "feature": "ape_index_diff",
+      "importance": 0.0570465587079525
+    },
+    {
+      "feature": "f_2_in_prime",
+      "importance": 0.055796876549720764
+    },
+    {
+      "feature": "f_1_implied_prob_norm",
+      "importance": 0.05248945578932762
+    },
+    {
+      "feature": "striking_battle",
+      "importance": 0.051457785069942474
+    },
+    {
+      "feature": "f_2_slpm",
+      "importance": 0.05016971752047539
+    },
+    {
+      "feature": "f_2_finish_potential",
+      "importance": 0.04757152870297432
+    },
+    {
+      "feature": "td_battle",
+      "importance": 0.04596574231982231
+    },
+    {
+      "feature": "f_2_td_def",
+      "importance": 0.04494580253958702
+    },
+    {
+      "feature": "f_2_str_differential",
+      "importance": 0.04240952804684639
+    },
+    {
+      "feature": "td_def_diff",
+      "importance": 0.04216333478689194
+    },
+    {
+      "feature": "style_clash",
+      "importance": 0.04101795703172684
+    },
+    {
+      "feature": "f_1_days_since_fight",
+      "importance": 0.04024632275104523
+    },
+    {
+      "feature": "activity_diff",
+      "importance": 0.038782935589551926
+    },
+    {
+      "feature": "f_2_str_acc",
+      "importance": 0.038679130375385284
+    },
+    {
+      "feature": "f_2_win_rate",
+      "importance": 0.03622562065720558
+    },
+    {
+      "feature": "str_acc_diff",
+      "importance": 0.03602089360356331
+    },
+    {
+      "feature": "f_1_sub_threat",
+      "importance": 0.03579731285572052
+    },
+    {
+      "feature": "matchup_score",
+      "importance": 0.035164374858140945
+    },
+    {
+      "feature": "f_2_durability",
+      "importance": 0.033557090908288956
+    },
+    {
+      "feature": "f_1_str_def",
+      "importance": 0.033198725432157516
+    },
+    {
+      "feature": "f_1_sapm",
+      "importance": 0.029437987133860588
+    },
+    {
+      "feature": "f_2_days_since_fight",
+      "importance": 0.0286935493350029
+    },
+    {
+      "feature": "f_1_td_avg",
+      "importance": 0.028392385691404343
+    },
+    {
+      "feature": "f_2_exp_level",
+      "importance": 0.028048990294337273
+    },
+    {
+      "feature": "f_2_record_score",
+      "importance": 0.027743292972445488
+    },
+    {
+      "feature": "f_2_implied_prob_norm",
+      "importance": 0.02769896760582924
+    },
+    {
+      "feature": "f_1_ufc_fights",
+      "importance": 0.027692589908838272
+    },
+    {
+      "feature": "f_1_td_acc",
+      "importance": 0.02741960808634758
+    },
+    {
+      "feature": "ko_power_diff",
+      "importance": 0.027392754331231117
+    },
+    {
+      "feature": "f_2_effectiveness",
+      "importance": 0.02683485858142376
+    },
+    {
+      "feature": "f_2_sapm",
+      "importance": 0.025778887793421745
+    },
+    {
+      "feature": "durability_diff",
+      "importance": 0.02569849230349064
+    },
+    {
+      "feature": "sapm_diff",
+      "importance": 0.023974351584911346
+    },
+    {
+      "feature": "f_1_finish_potential",
+      "importance": 0.022410942241549492
+    },
+    {
+      "feature": "f_1_durability",
+      "importance": 0.02207629568874836
+    },
+    {
+      "feature": "effectiveness_diff",
+      "importance": 0.021791260689496994
+    },
+    {
+      "feature": "td_avg_diff",
+      "importance": 0.020990248769521713
+    },
+    {
+      "feature": "f_1_td_def",
+      "importance": 0.020737269893288612
+    },
+    {
+      "feature": "td_acc_diff",
+      "importance": 0.020465387031435966
+    },
+    {
+      "feature": "finish_potential_diff",
+      "importance": 0.019776098430156708
+    },
+    {
+      "feature": "str_def_diff",
+      "importance": 0.019603166729211807
+    },
+    {
+      "feature": "f_1_win_rate",
+      "importance": 0.019505880773067474
+    },
+    {
+      "feature": "f_2_td_avg",
+      "importance": 0.018061144277453423
+    },
+    {
+      "feature": "f_2_style_ratio",
+      "importance": 0.018043847754597664
+    },
+    {
+      "feature": "f_1_str_acc",
+      "importance": 0.018038243055343628
+    },
+    {
+      "feature": "odds_value_diff",
+      "importance": 0.016791336238384247
+    },
+    {
+      "feature": "f_2_grappler_score",
+      "importance": 0.016204580664634705
+    },
+    {
+      "feature": "f_1_record_score",
+      "importance": 0.016195885837078094
+    },
+    {
+      "feature": "weight_class_encoded",
+      "importance": 0.015552041120827198
+    },
+    {
+      "feature": "sub_threat_diff",
+      "importance": 0.015431428328156471
+    },
+    {
+      "feature": "f_2_sub_avg",
+      "importance": 0.015363412909209728
+    },
+    {
+      "feature": "f_1_effectiveness",
+      "importance": 0.014699325896799564
+    },
+    {
+      "feature": "f_1_striker_score",
+      "importance": 0.01457460317760706
+    },
+    {
+      "feature": "prime_advantage",
+      "importance": 0.014400546438992023
+    },
+    {
+      "feature": "f_1_style_ratio",
+      "importance": 0.01428248267620802
+    },
+    {
+      "feature": "f_2_streak",
+      "importance": 0.014090487733483315
+    },
+    {
+      "feature": "f_1_loss_rate",
+      "importance": 0.013586948625743389
+    },
+    {
+      "feature": "ufc_exp_diff",
+      "importance": 0.013340283185243607
+    },
+    {
+      "feature": "f_1_slpm",
+      "importance": 0.012957558035850525
+    },
+    {
+      "feature": "f_1_ko_power",
+      "importance": 0.01139107346534729
+    },
+    {
+      "feature": "height_diff",
+      "importance": 0.011365310288965702
+    },
+    {
+      "feature": "slpm_diff",
+      "importance": 0.011038626544177532
+    },
+    {
+      "feature": "streak_diff",
+      "importance": 0.010820725932717323
+    },
+    {
+      "feature": "f_2_sub_threat",
+      "importance": 0.010754432529211044
+    },
+    {
+      "feature": "f_2_age_risk",
+      "importance": 0.01065613329410553
+    },
+    {
+      "feature": "sub_avg_diff",
+      "importance": 0.010393369011580944
+    },
+    {
+      "feature": "f_1_grappler_score",
+      "importance": 0.010257923975586891
+    },
+    {
+      "feature": "f_1_streak",
+      "importance": 0.009746560826897621
+    },
+    {
+      "feature": "reach_diff",
+      "importance": 0.008484342135488987
+    },
+    {
+      "feature": "f_2_ufc_fights",
+      "importance": 0.008085783571004868
+    },
+    {
+      "feature": "f_1_sub_avg",
+      "importance": 0.005336140748113394
+    },
+    {
+      "feature": "f_1_age_risk",
+      "importance": 0.00514904735609889
+    },
+    {
+      "feature": "stance_clash",
+      "importance": 0.003961944952607155
+    },
+    {
+      "feature": "title_fight",
+      "importance": 0.003348361235111952
+    },
+    {
+      "feature": "f_1_stance_encoded",
+      "importance": 0.0029440021608024836
+    },
+    {
+      "feature": "f_2_stance_encoded",
+      "importance": 0.002056956058368087
+    },
+    {
+      "feature": "f_2_on_lose_streak",
+      "importance": 0.001931596314534545
+    },
+    {
+      "feature": "debut_matchup",
+      "importance": 0.0019197349902242422
+    },
+    {
+      "feature": "f_1_in_prime",
+      "importance": 0.001338368747383356
+    },
+    {
+      "feature": "f_1_ring_rust",
+      "importance": 0.0011279942700639367
+    },
+    {
+      "feature": "f_2_is_debut",
+      "importance": 0.0009349557803943753
+    },
+    {
+      "feature": "f_1_striker_vs_f_2_grappler",
+      "importance": 0.0007456743624061346
+    },
+    {
+      "feature": "veteran_vs_rookie",
+      "importance": 0.0006219407659955323
+    },
+    {
+      "feature": "f_2_is_veteran",
+      "importance": 0.0
+    },
+    {
+      "feature": "f_1_is_debut",
+      "importance": 0.0
+    },
+    {
+      "feature": "f_1_is_veteran",
+      "importance": 0.0
+    },
+    {
+      "feature": "f_1_grappler_vs_f_2_striker",
+      "importance": 0.0
+    },
+    {
+      "feature": "f_2_ring_rust",
+      "importance": 0.0
+    },
+    {
+      "feature": "f_1_on_lose_streak",
+      "importance": 0.0
+    },
+    {
+      "feature": "f_2_on_win_streak",
+      "importance": 0.0
+    },
+    {
+      "feature": "f_1_on_win_streak",
+      "importance": 0.0
+    },
+    {
+      "feature": "f_1_is_favorite",
+      "importance": 0.0
+    },
+    {
+      "feature": "f_1_heavy_favorite",
+      "importance": 0.0
+    },
+    {
+      "feature": "f_1_heavy_underdog",
+      "importance": 0.0
+    }
+  ],
+  "interactions": [
+    {
+      "feature_1": "win_rate_diff",
+      "feature_2": "record_score_diff",
+      "interaction_strength": 0.8345812033173255
+    },
+    {
+      "feature_1": "f_2_odds",
+      "feature_2": "f_1_odds",
+      "interaction_strength": 0.7127765712490803
+    },
+    {
+      "feature_1": "f_1_odds",
+      "feature_2": "win_rate_diff",
+      "interaction_strength": 0.29283392558787286
+    },
+    {
+      "feature_1": "f_1_odds",
+      "feature_2": "record_score_diff",
+      "interaction_strength": 0.29072203666602503
+    },
+    {
+      "feature_1": "f_2_odds",
+      "feature_2": "win_rate_diff",
+      "interaction_strength": 0.28718795168103545
+    },
+    {
+      "feature_1": "f_2_odds",
+      "feature_2": "record_score_diff",
+      "interaction_strength": 0.2831297127067519
+    },
+    {
+      "feature_1": "exp_diff",
+      "feature_2": "win_rate_diff",
+      "interaction_strength": 0.07885761860668516
+    },
+    {
+      "feature_1": "exp_diff",
+      "feature_2": "record_score_diff",
+      "interaction_strength": 0.0745665859448018
+    },
+    {
+      "feature_1": "f_2_odds",
+      "feature_2": "exp_diff",
+      "interaction_strength": 0.02988214363334337
+    },
+    {
+      "feature_1": "f_1_odds",
+      "feature_2": "exp_diff",
+      "interaction_strength": 0.02174739079431403
+    }
+  ]
+}

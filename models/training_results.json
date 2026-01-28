@@ -1,0 +1,321 @@
+{
+  "model_no_odds": {
+    "metrics": {
+      "accuracy": 0.7217496962332929,
+      "f1_score": 0.7639175257731958,
+      "f1_macro": 0.7125800646617458,
+      "precision": 0.8458904109589042,
+      "recall": 0.6964285714285714,
+      "balanced_accuracy": 0.7322349042709868,
+      "roc_auc": 0.8134592279668242,
+      "threshold": 0.6100000000000003,
+      "confusion_matrix": [
+        [
+          447,
+          135
+        ],
+        [
+          323,
+          741
+        ]
+      ]
+    },
+    "cv_scores": {
+      "accuracy": {
+        "mean": 0.7447144592952613,
+        "std": 0.005132129303023793
+      },
+      "f1": {
+        "mean": 0.8084150621194045,
+        "std": 0.00409601249634847
+      },
+      "f1_macro": {
+        "mean": 0.7129195681641132,
+        "std": 0.006242704221142842
+      },
+      "roc_auc": {
+        "mean": 0.804996551627414,
+        "std": 0.009946556539164033
+      }
+    },
+    "top_features": [
+      {
+        "feature": "record_score_diff",
+        "importance": 0.037891749292612076
+      },
+      {
+        "feature": "win_rate_diff",
+        "importance": 0.03634104132652283
+      },
+      {
+        "feature": "f_2_striker_score",
+        "importance": 0.03238788619637489
+      },
+      {
+        "feature": "f_2_slpm",
+        "importance": 0.02779719978570938
+      },
+      {
+        "feature": "loss_rate_diff",
+        "importance": 0.024905717000365257
+      },
+      {
+        "feature": "f_2_ko_power",
+        "importance": 0.01907241903245449
+      },
+      {
+        "feature": "f_1_exp_level",
+        "importance": 0.015949483960866928
+      },
+      {
+        "feature": "str_differential_diff",
+        "importance": 0.015924181789159775
+      },
+      {
+        "feature": "striking_battle",
+        "importance": 0.01548633724451065
+      },
+      {
+        "feature": "f_1_age_risk",
+        "importance": 0.013910704292356968
+      },
+      {
+        "feature": "f_1_str_differential",
+        "importance": 0.012776395305991173
+      },
+      {
+        "feature": "exp_diff",
+        "importance": 0.012707683257758617
+      },
+      {
+        "feature": "f_1_is_veteran",
+        "importance": 0.012598717585206032
+      },
+      {
+        "feature": "f_2_td_def",
+        "importance": 0.011753386817872524
+      },
+      {
+        "feature": "age_diff",
+        "importance": 0.010914918035268784
+      },
+      {
+        "feature": "td_battle",
+        "importance": 0.010518857277929783
+      },
+      {
+        "feature": "f_2_td_acc",
+        "importance": 0.010414563119411469
+      },
+      {
+        "feature": "f_2_finish_potential",
+        "importance": 0.010365846566855907
+      },
+      {
+        "feature": "f_2_loss_rate",
+        "importance": 0.010288817808032036
+      },
+      {
+        "feature": "f_2_record_score",
+        "importance": 0.010188983753323555
+      }
+    ],
+    "optimal_threshold": 0.5820000000000004,
+    "best_params": {
+      "n_estimators": 348,
+      "max_depth": 8,
+      "learning_rate": 0.032377393157455484,
+      "subsample": 0.7500662288881457,
+      "colsample_bytree": 0.7226937827638014,
+      "colsample_bylevel": 0.9329915976694132,
+      "min_child_weight": 9,
+      "gamma": 1.184248708285606,
+      "reg_alpha": 0.9770148831794541,
+      "reg_lambda": 1.6351009692499503e-08,
+      "scale_pos_weight": 0.8655681283069352
+    },
+    "threshold_stability": {
+      "fold_thresholds": [
+        0.5700000000000003,
+        0.5700000000000003,
+        0.5100000000000002,
+        0.6200000000000003,
+        0.6400000000000003
+      ],
+      "mean_threshold": 0.5820000000000004,
+      "std_threshold": 0.04534313619501858,
+      "range": [
+        0.5100000000000002,
+        0.6400000000000003
+      ],
+      "stability": "\u2705 STABLE (std < 0.05)",
+      "recommended_threshold": 0.5820000000000004,
+      "conservative_threshold": 0.5,
+      "avg_improvement": 0.008552611161991686
+    },
+    "n_features": 101,
+    "n_samples": 8230
+  },
+  "model_with_odds": {
+    "metrics": {
+      "accuracy": 0.7320777642770352,
+      "f1_score": 0.776255707762557,
+      "f1_macro": 0.7212088531242762,
+      "precision": 0.8434399117971334,
+      "recall": 0.7189849624060151,
+      "balanced_accuracy": 0.7374993540552413,
+      "roc_auc": 0.8247228896984731,
+      "threshold": 0.4800000000000002,
+      "confusion_matrix": [
+        [
+          440,
+          142
+        ],
+        [
+          299,
+          765
+        ]
+      ]
+    },
+    "cv_scores": {
+      "accuracy": {
+        "mean": 0.7496962332928311,
+        "std": 0.009559726980690618
+      },
+      "f1": {
+        "mean": 0.79415808522506,
+        "std": 0.00795418647814487
+      },
+      "f1_macro": {
+        "mean": 0.7374333593289876,
+        "std": 0.010024695533920323
+      },
+      "roc_auc": {
+        "mean": 0.82944195846707,
+        "std": 0.010724440687254201
+      }
+    },
+    "top_features": [
+      {
+        "feature": "f_2_odds",
+        "importance": 0.06775510311126709
+      },
+      {
+        "feature": "f_1_odds",
+        "importance": 0.04994061216711998
+      },
+      {
+        "feature": "f_2_ko_power",
+        "importance": 0.027093425393104553
+      },
+      {
+        "feature": "odds_value_diff",
+        "importance": 0.024463986977934837
+      },
+      {
+        "feature": "f_2_striker_score",
+        "importance": 0.02291777729988098
+      },
+      {
+        "feature": "record_score_diff",
+        "importance": 0.020357761532068253
+      },
+      {
+        "feature": "loss_rate_diff",
+        "importance": 0.02008790522813797
+      },
+      {
+        "feature": "f_2_implied_prob_norm",
+        "importance": 0.017532743513584137
+      },
+      {
+        "feature": "win_rate_diff",
+        "importance": 0.017498917877674103
+      },
+      {
+        "feature": "f_1_implied_prob_norm",
+        "importance": 0.017004193738102913
+      },
+      {
+        "feature": "f_1_ring_rust",
+        "importance": 0.015749678015708923
+      },
+      {
+        "feature": "f_2_slpm",
+        "importance": 0.014315561391413212
+      },
+      {
+        "feature": "str_differential_diff",
+        "importance": 0.013391182757914066
+      },
+      {
+        "feature": "odds_diff",
+        "importance": 0.013352175243198872
+      },
+      {
+        "feature": "f_1_exp_level",
+        "importance": 0.011485137045383453
+      },
+      {
+        "feature": "striking_battle",
+        "importance": 0.011474971659481525
+      },
+      {
+        "feature": "exp_diff",
+        "importance": 0.010919719003140926
+      },
+      {
+        "feature": "f_2_finish_potential",
+        "importance": 0.010464629158377647
+      },
+      {
+        "feature": "f_1_str_differential",
+        "importance": 0.009999895468354225
+      },
+      {
+        "feature": "effectiveness_diff",
+        "importance": 0.0095168212428689
+      }
+    ],
+    "optimal_threshold": 0.4660000000000002,
+    "best_params": {
+      "n_estimators": 290,
+      "max_depth": 7,
+      "learning_rate": 0.032620959348225585,
+      "subsample": 0.703744659876753,
+      "colsample_bytree": 0.9499744910940935,
+      "colsample_bylevel": 0.9115020918761557,
+      "min_child_weight": 10,
+      "gamma": 3.131905543519781,
+      "reg_alpha": 2.6451547422964462e-08,
+      "reg_lambda": 0.00039552282650686413,
+      "scale_pos_weight": 0.5272353917119605
+    },
+    "threshold_stability": {
+      "fold_thresholds": [
+        0.4500000000000002,
+        0.4500000000000002,
+        0.4600000000000002,
+        0.4700000000000002,
+        0.5000000000000002
+      ],
+      "mean_threshold": 0.4660000000000002,
+      "std_threshold": 0.018547236990991426,
+      "range": [
+        0.4500000000000002,
+        0.5000000000000002
+      ],
+      "stability": "\u2705 STABLE (std < 0.05)",
+      "recommended_threshold": 0.4660000000000002,
+      "conservative_threshold": 0.4845472369909916,
+      "avg_improvement": 0.004770134506028811
+    },
+    "n_features": 110,
+    "n_samples": 8230
+  },
+  "comparison": {
+    "baseline_accuracy": 0.646,
+    "improvement_from_odds": 0.010328068043742311,
+    "timestamp": "2026-01-28T15:36:17.472811"
+  }
+}
