@@ -305,6 +305,23 @@ FAISS (Facebook AI Similarity Search) finds the 10 most similar historical fight
 
 ## 🤖 LLM Setup
 
+### Environment Variables (.env file)
+
+Create a `.env` file in the project root to store your API keys:
+
+```bash
+# Create .env file
+touch .env  # or create manually on Windows
+```
+
+Add your API keys to `.env`:
+
+```env
+# .env file
+ANTHROPIC_API_KEY=sk-ant-your-key-here
+OPENAI_API_KEY=sk-your-key-here
+```
+
 ### Ollama (Local - Free) - Recommended
 
 ```bash
@@ -313,16 +330,36 @@ ollama pull llama3.1:8b
 ollama serve
 ```
 
+No API key needed - runs locally.
+
 ### Claude API
 
+Add to `.env`:
+
+```env
+ANTHROPIC_API_KEY=sk-ant-your-key-here
+```
+
+Or set directly in terminal:
+
 ```bash
-export ANTHROPIC_API_KEY="sk-ant-..."
+export ANTHROPIC_API_KEY="sk-ant-..."  # Linux/Mac
+$env:ANTHROPIC_API_KEY="sk-ant-..."    # PowerShell
 ```
 
 ### OpenAI API
 
+Add to `.env`:
+
+```env
+OPENAI_API_KEY=sk-your-key-here
+```
+
+Or set directly in terminal:
+
 ```bash
-export OPENAI_API_KEY="sk-..."
+export OPENAI_API_KEY="sk-..."  # Linux/Mac
+$env:OPENAI_API_KEY="sk-..."    # PowerShell
 ```
 
 ---
