@@ -16,13 +16,15 @@ Features:
     - Demo mode when data files are unavailable
 """
 
-import streamlit as st
-import pandas as pd
-import numpy as np
-import sys
-from pathlib import Path
-from typing import Optional, Dict, Any, List
 import warnings
+from typing import Optional, Dict, Any, List
+from pathlib import Path
+import sys
+import numpy as np
+import pandas as pd
+import streamlit as st
+from dotenv import load_dotenv
+load_dotenv()
 warnings.filterwarnings('ignore')
 
 # Optional imports for SHAP visualization
@@ -371,14 +373,14 @@ def load_shared_components():
 
 
 @st.cache_resource(show_spinner=False)
-def load_analyzer(with_odds: bool):
+def load_analyzer(with_odds: bool, provider: str = "ollama"):
     """
     Load FightAnalyzer with appropriate model (with/without odds).
-    Cached per with_odds value, so switching is fast after first load.
+    Cached per (with_odds, provider) combination.
     """
     try:
         from rag_analyzer import FightAnalyzer
-        analyzer = FightAnalyzer(provider="ollama")
+        analyzer = FightAnalyzer(provider=provider)
         analyzer.load_models(with_odds=with_odds)
         return analyzer
     except Exception as e:
@@ -520,6 +522,18 @@ data/processed/features_model_ready.csv
             help="Select provider for AI analysis"
         )
 
+        # Show provider status
+        provider_status = {
+            # check actual status
+            'ollama': '🟢 Local (free)' if True else '🔴 Not running',
+            'claude': '🟢 API Key Set' if __import__('os').getenv('ANTHROPIC_API_KEY') else '🔴 No API Key',
+            'openai': '🟢 API Key Set' if __import__('os').getenv('OPENAI_API_KEY') else '🔴 No API Key'
+        }
+        st.caption(f"Status: {provider_status.get(llm_provider, 'Unknown')}")
+
+        if llm_provider == 'ollama':
+            st.caption("💡 Make sure `ollama serve` is running")
+
         quick_mode = st.checkbox("⚡ Quick Mode", value=True,
                                  help="Skip LLM for faster predictions")
 
@@ -659,8 +673,9 @@ data/processed/features_model_ready.csv
                     include_odds=include_odds
                 )
 
-                # Load analyzer with matching odds setting
-                analyzer = load_analyzer(with_odds=include_odds)
+                # Load analyzer with matching odds setting and user's provider choice
+                analyzer = load_analyzer(
+                    with_odds=include_odds, provider=llm_provider)
 
                 result = None
                 if analyzer:
@@ -692,7 +707,8 @@ data/processed/features_model_ready.csv
                     'f1_stats': f1_stats,
                     'f2_stats': f2_stats,
                     'shap_explanation': shap_explanation,
-                    'include_odds': include_odds  # Store for later use
+                    'include_odds': include_odds,  # Store for later use
+                    'llm_provider': llm_provider  # Store provider choice
                 }
 
             except Exception as e:
@@ -709,9 +725,11 @@ data/processed/features_model_ready.csv
         f2_stats = pred_data['f2_stats']
         shap_explanation = pred_data['shap_explanation']
         include_odds = pred_data.get('include_odds', False)
+        stored_provider = pred_data.get('llm_provider', 'ollama')
 
-        # Load analyzer with correct odds setting for tabs that need it
-        analyzer = load_analyzer(with_odds=include_odds)
+        # Load analyzer with correct odds setting and provider for tabs that need it
+        analyzer = load_analyzer(
+            with_odds=include_odds, provider=stored_provider)
 
         # Display Results in Tabs
         tab_pred, tab_stats, tab_explain, tab_similar, tab_ai = st.tabs([
@@ -1174,13 +1192,18 @@ data/processed/features_model_ready.csv
                     except Exception as e:
                         st.error(f"AI analysis failed: {e}")
             else:
+                provider_instructions = {
+                    'ollama': 'Run <code>ollama serve</code> and install a model (e.g., <code>ollama pull llama3</code>)',
+                    'claude': 'Set environment variable <code>ANTHROPIC_API_KEY</code>',
+                    'openai': 'Set environment variable <code>OPENAI_API_KEY</code>'
+                }
+                current_provider = stored_provider if 'stored_provider' in dir() else 'ollama'
                 st.markdown(f"""
                 <div class="warning-box">
-                    <strong>LLM Provider Not Available</strong><br><br>
-                    To enable AI analysis:<br>
-                    • <strong>Ollama</strong>: Run <code>ollama serve</code> and install a model<br>
-                    • <strong>Claude</strong>: Set <code>ANTHROPIC_API_KEY</code><br>
-                    • <strong>OpenAI</strong>: Set <code>OPENAI_API_KEY</code>
+                    <strong>LLM Provider Not Available: {current_provider.upper()}</strong><br><br>
+                    To enable AI analysis with <strong>{current_provider}</strong>:<br>
+                    {provider_instructions.get(current_provider, 'Check provider configuration')}<br><br>
+                    <em>You can change the provider in the sidebar settings.</em>
                 </div>
                 """, unsafe_allow_html=True)
 
