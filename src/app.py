@@ -335,14 +335,14 @@ load_custom_css()
 
 
 @st.cache_resource(show_spinner=False)
-def load_components():
-    """Load all ML components with graceful fallbacks."""
+def load_shared_components():
+    """
+    Load shared components that don't depend on odds selection.
+    These are loaded ONCE at app start.
+    """
     components = {
         'generator': None,
-        'analyzer': None,
-        'shap_explainer': None,
-        'xgb_model': None,
-        'fighter_db': None,  # Unified fighter database
+        'fighter_db': None,
         'fighter_list': [],
         'status': 'unknown'
     }
@@ -367,30 +367,49 @@ def load_components():
         if components['status'] == 'unknown':
             components['status'] = f'error: {e}'
 
+    return components
+
+
+@st.cache_resource(show_spinner=False)
+def load_analyzer(with_odds: bool):
+    """
+    Load FightAnalyzer with appropriate model (with/without odds).
+    Cached per with_odds value, so switching is fast after first load.
+    """
     try:
         from rag_analyzer import FightAnalyzer
         analyzer = FightAnalyzer(provider="ollama")
-        analyzer.load_models(with_odds=False)
-        components['analyzer'] = analyzer
+        analyzer.load_models(with_odds=with_odds)
+        return analyzer
     except Exception as e:
-        pass  # Analyzer is optional
+        st.warning(f"Could not load analyzer: {e}")
+        return None
 
-    # Load SHAP explainer
+
+@st.cache_resource(show_spinner=False)
+def load_shap_explainer(with_odds: bool):
+    """
+    Load SHAP explainer for the appropriate model.
+    Cached per with_odds value.
+    """
     try:
         import joblib
         from shap_explainer import SHAPExplainer
 
-        model_path = Path("models/xgboost_model.pkl")
+        model_filename = "xgboost_model_with_odds.pkl" if with_odds else "xgboost_model.pkl"
+        model_path = Path(f"models/{model_filename}")
+
         if model_path.exists():
             model_data = joblib.load(model_path)
             xgb_model = model_data['model']
-            components['xgb_model'] = xgb_model
-            components['shap_explainer'] = SHAPExplainer(
-                xgb_model, output_path="models")
+            return {
+                'xgb_model': xgb_model,
+                'shap_explainer': SHAPExplainer(xgb_model, output_path="models")
+            }
     except Exception as e:
         pass  # SHAP is optional
 
-    return components
+    return {'xgb_model': None, 'shap_explainer': None}
 
 
 @st.cache_data(show_spinner=False)
@@ -471,14 +490,13 @@ def main():
                 unsafe_allow_html=True)
     st.markdown("")
 
-    # Load components
+    # Load shared components (fighter database, feature generator)
     with st.spinner("🔄 Loading fight database..."):
-        components = load_components()
+        shared = load_shared_components()
 
-    generator = components['generator']
-    analyzer = components['analyzer']
-    fighter_db = components['fighter_db']
-    fighter_list = components['fighter_list']
+    generator = shared['generator']
+    fighter_db = shared['fighter_db']
+    fighter_list = shared['fighter_list']
 
     # Check if data is available
     if fighter_db is None and generator is None:
@@ -627,6 +645,9 @@ data/processed/features_model_ready.csv
         # Generate prediction
         with st.spinner("🔮 Calculating prediction..."):
             try:
+                # Determine if using odds based on user input
+                include_odds = (f1_odds is not None and f2_odds is not None)
+
                 wc = weight_class if weight_class != "Auto-detect" else "Unknown"
                 features, feature_names = generator.generate_features(
                     fighter1=f1_stats.name,
@@ -635,25 +656,33 @@ data/processed/features_model_ready.csv
                     title_fight=title_fight,
                     f1_odds=f1_odds,
                     f2_odds=f2_odds,
-                    include_odds=(f1_odds is not None)
+                    include_odds=include_odds
                 )
+
+                # Load analyzer with matching odds setting
+                analyzer = load_analyzer(with_odds=include_odds)
 
                 result = None
                 if analyzer:
                     result = analyzer.quick_predict(
                         features, f1_stats.name, f2_stats.name)
 
+                # Load SHAP explainer with matching odds setting
+                shap_components = load_shap_explainer(with_odds=include_odds)
+
                 # Generate SHAP explanation if available
                 shap_explanation = None
-                if components.get('shap_explainer') and len(features) <= 101:
-                    shap_explanation = get_shap_explanation(
-                        components['shap_explainer'],
-                        features[:101] if len(features) > 101 else features,
-                        feature_names[:101] if len(
-                            feature_names) > 101 else feature_names,
-                        f1_stats.name,
-                        f2_stats.name
-                    )
+                if shap_components.get('shap_explainer'):
+                    # Feature count should match: 101 for no odds, 110 for with odds
+                    expected_features = 110 if include_odds else 101
+                    if len(features) == expected_features:
+                        shap_explanation = get_shap_explanation(
+                            shap_components['shap_explainer'],
+                            features,
+                            feature_names,
+                            f1_stats.name,
+                            f2_stats.name
+                        )
 
                 # Store in session state to persist across reruns
                 st.session_state['prediction_data'] = {
@@ -662,7 +691,8 @@ data/processed/features_model_ready.csv
                     'result': result,
                     'f1_stats': f1_stats,
                     'f2_stats': f2_stats,
-                    'shap_explanation': shap_explanation
+                    'shap_explanation': shap_explanation,
+                    'include_odds': include_odds  # Store for later use
                 }
 
             except Exception as e:
@@ -678,6 +708,10 @@ data/processed/features_model_ready.csv
         f1_stats = pred_data['f1_stats']
         f2_stats = pred_data['f2_stats']
         shap_explanation = pred_data['shap_explanation']
+        include_odds = pred_data.get('include_odds', False)
+
+        # Load analyzer with correct odds setting for tabs that need it
+        analyzer = load_analyzer(with_odds=include_odds)
 
         # Display Results in Tabs
         tab_pred, tab_stats, tab_explain, tab_similar, tab_ai = st.tabs([
